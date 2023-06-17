@@ -1,4 +1,4 @@
-# Project "Sign-Up Page"
+# Project "Sign-up Page"
 ## Task Description
 Create a sign-up page for an imaginary service. Use the following example as a general idea for the layout:
 
@@ -8,3 +8,8 @@ Create a sign-up page for an imaginary service. Use the following example as a g
 Intitial version, an unstyled HTML file.
 
 <img src="versions/version1.png">
+
+## Version 2 
+Draft styling and an image.
+
+<img src="versions/version2.png">
