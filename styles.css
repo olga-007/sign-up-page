@@ -5,20 +5,20 @@
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(247, 247, 247);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     display: flex;
 }
 
 .splash {
-    height: 1vh;
+    height: 100vh;
     flex: 3;
     display: flex;
     justify-content: center;
 }
 
 img {
-    position: realtive;
+    position: relative;
     z-index: -1;
     width: 100%;
     min-height: 100vh;
@@ -30,56 +30,88 @@ img {
 }
 
 .block {
-    padding: 0 30px;
-    margin: 20px 0;
+    margin: 3vh 0;
+    padding: 0 3vw;
 }
 
-.block > * {
-    max-width: 60vh;
+.block>* {
+    max-width: min(700px, 60vw);
+}
+
+.intro {
+    height: 30vh;
+    padding-bottom: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 p {
-    margin: 20px 0;
+    margin: 1vh 0;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 .form-box {
     background-color: white;
-    padding: 10px 30px;
+    border: 1px solid #f1f2f4;
+    box-shadow: 5px 5px 5px rgb(220, 220, 220);
 }
 
 h2 {
-	font: inherit;
+    font: inherit;
+    font-size: 1.4rem;
     font-weight: bold;
+    padding: 2vh 0;
 }
 
 .fields {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 1.7vh;
 }
 
-.fields > div {
+.fields>div {
     display: flex;
+    margin-bottom: 24px;
     flex-direction: column;
-    margin: 10px 50px 10px 0;
+}
+
+.fields>div:nth-child(odd) {
+    padding-right: 6vw;
+}
+
+label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+input {
+    height: 2rem;
+    width: 250px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
 }
 
 button {
-    padding: 5px 25px
+    /* TODO: add shadow */
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1vh 0;
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 44px
 }
 
 a {
+    font-weight: bold;
+    color: #596D48;
     white-space: nowrap;
+    text-decoration: none;
 }
-
-/* body > * {
-    border: 2px solid blue;
-}
-
-body > * > * {
-    border: 2px solid red;
-}
-
-body > * > * > * {
-    border: 2px solid yellow;
-} */

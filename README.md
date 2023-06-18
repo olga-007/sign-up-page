@@ -9,7 +9,14 @@ Intitial version, an unstyled HTML file.
 
 <img src="versions/version1.png">
 
+
 ## Version 2 
 Draft styling and an image.
 
 <img src="versions/version2.png">
+
+
+## Version 3 
+The main section is mostly styled.
+
+<img src="versions/version3.png">
