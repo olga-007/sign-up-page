@@ -55,6 +55,18 @@ img.cover {
     font-size: clamp(40px, 5vw, 5rem);
 }
 
+.attribution {
+    position: fixed;
+    bottom: min(0px, 100vh - 250px);
+    z-index: 1;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+.attribution a {
+    color: white;
+}
+
 .main {
     width: calc(100vw - var(--sidebar-width));
     margin-bottom: 20px;
@@ -140,7 +152,7 @@ button {
     padding: 14px 44px
 }
 
-a {
+a.login {
     font-weight: bold;
     color: #596D48;
     white-space: nowrap;
