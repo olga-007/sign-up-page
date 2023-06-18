@@ -4,33 +4,37 @@
     box-sizing: border-box;
 }
 
+:root {
+    --sidebar-width: 37.5vw;
+}
+
 body {
     background-color: rgb(247, 247, 247);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     display: flex;
 }
 
-.splash {
+.sidebar {
+    position: relative;
     height: 100vh;
-    flex: 3;
+    width: var(--sidebar-width);
     display: flex;
     justify-content: center;
 }
 
-img {
-    position: relative;
-    z-index: -1;
-    width: 100%;
+img.cover {
+    position: fixed;
+    width: var(--sidebar-width);
     min-height: 100vh;
     object-fit: cover;
 }
 
 .main {
-    flex: 5;
+    width: calc(100vw - var(--sidebar-width));
 }
 
 .block {
-    margin: 3vh 0;
+    margin: max(10px, 3vh) 0;
     padding: 0 3vw;
 }
 
@@ -39,15 +43,15 @@ img {
 }
 
 .intro {
-    height: 30vh;
-    padding-bottom: 1.5vh;
+    height: max(10rem, 30vh);
+    padding-bottom: max(8px, 1.5vh);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
 p {
-    margin: 1vh 0;
+    margin: max(10px, 1vh) 0;
     font-size: clamp(16px, 2.5vh, 1.4rem);
     font-weight: bold;
 }
@@ -68,12 +72,12 @@ h2 {
 .fields {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 1.7vh;
+    padding-bottom: max(10px, 1.7vh);
 }
 
 .fields>div {
     display: flex;
-    margin-bottom: max(10px, 2vh);
+    margin-bottom: max(20px, 2vh);
     flex-direction: column;
 }
 
@@ -101,7 +105,7 @@ button {
     /* TODO: add shadow */
     font-size: 1rem;
     font-weight: bold;
-    margin: 1vh 0;
+    margin: max(15px, 1vh) 0;
     color: white;
     background-color: #596D48;
     border: none;
