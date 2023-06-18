@@ -6,6 +6,7 @@
 
 :root {
     --sidebar-width: 37.5vw;
+    --logo-height: max(7rem, 15vh);
 }
 
 body {
@@ -18,8 +19,10 @@ body {
     position: relative;
     height: 100vh;
     width: var(--sidebar-width);
+    color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 img.cover {
@@ -29,13 +32,37 @@ img.cover {
     object-fit: cover;
 }
 
+.logo {
+    position:fixed;
+    z-index: 1;
+    top: calc(max(10rem + max(20px, 6vh), 36vh) - var(--logo-height));
+    height: var(--logo-height);
+    width: var(--sidebar-width);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;  
+}
+
+.logo-text {
+    font-size: clamp(40px, 5vw, 5rem);
+}
+
 .main {
     width: calc(100vw - var(--sidebar-width));
+    margin-bottom: 20px;
 }
 
 .block {
     margin: max(10px, 3vh) 0;
-    padding: 0 3vw;
+    padding: 0 max(20px, 3vw);
 }
 
 .block>* {
