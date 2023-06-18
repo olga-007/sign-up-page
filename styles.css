@@ -48,7 +48,7 @@ img {
 
 p {
     margin: 1vh 0;
-    font-size: 1.4rem;
+    font-size: clamp(16px, 2.5vh, 1.4rem);
     font-weight: bold;
 }
 
@@ -60,9 +60,9 @@ p {
 
 h2 {
     font: inherit;
-    font-size: 1.4rem;
+    font-size: clamp(18px, 2.5vh, 1.4rem);
     font-weight: bold;
-    padding: 2vh 0;
+    padding: max(20px, 2vh) 0;
 }
 
 .fields {
@@ -73,7 +73,7 @@ h2 {
 
 .fields>div {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: max(10px, 2vh);
     flex-direction: column;
 }
 
