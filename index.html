@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Awesome Sign-up Page</title>
 </head>
+
 <body>
     <div class="sidebar">
         <img class="cover" src="./assets/cover.jpg" alt="Cover Image">
@@ -13,13 +15,15 @@
             <img src="./assets/logo.png" alt="Logo">
             <div class="logo-text">My Logo</div>
         </div>
-        <div class="attribution">Photo by <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Halie West</a>
-             on <a href="https://unsplash.com/" target="_blank">Unsplash</a></div>
+        <div class="attribution">Photo by
+            <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Halie West</a>
+            on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+        </div>
     </div>
     <div class="main">
         <div class="intro block">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                <br>Sign up <i>now</i> to get started.</p>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up <i>now</i> to get started.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
         <form action="" method="post">
@@ -28,27 +32,28 @@
                 <div class="fields">
                     <div>
                         <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name" required />
+                        <input type="text" id="first_name" name="first_name" minlength="2" maxlength="30" required />
                     </div>
                     <div>
                         <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name" required />
+                        <input type="text" id="last_name" name="last_name" minlength="2" maxlength="30" required />
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" minlength="7" maxlength="100" name="email" required />
                     </div>
                     <div>
                         <label for="tel">Phone Number</label>
-                        <input type="tel" id="tel" name="tel" required />
+                        <input type="tel" id="tel" name="tel" pattern="(\+\d(-|\s)?)?(\d{3}-?|\(\d{3}\)\s)\d{3}-?\d{4}"
+                            required />
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required />
+                        <input type="password" id="password" name="password" minlength="8" required />
                     </div>
                     <div>
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password" required />
+                        <input type="password" id="confirm_password" minlength="8" required />
                     </div>
                 </div>
             </div>
@@ -59,4 +64,5 @@
         <div class="block">Already have an account? <a class="login" href="#">Log in</a></div>
     </div>
 </body>
+
 </html>
