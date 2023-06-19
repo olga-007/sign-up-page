@@ -20,3 +20,9 @@ Draft styling and an image.
 The main section is mostly styled.
 
 <img src="versions/version3.png">
+
+
+## Version 4 
+Sidebar: logo, custom font, and photo attribution.
+
+<img src="versions/version4.png">

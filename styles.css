@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Androgyne;
+    src: url(./assets/Androgyne_TB.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +38,7 @@ img.cover {
 }
 
 .logo {
-    position:fixed;
+    position: fixed;
     z-index: 1;
     top: calc(max(10rem + max(20px, 6vh), 36vh) - var(--logo-height));
     height: var(--logo-height);
@@ -43,15 +48,16 @@ img.cover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 1vw;
 }
 
 .logo img {
     max-width: 100%;
-    max-height: 100%;  
+    max-height: 100%;
 }
 
 .logo-text {
+    font-family: Androgyne, sans-serif;
     font-size: clamp(40px, 5vw, 5rem);
 }
 
