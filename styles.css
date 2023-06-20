@@ -84,7 +84,7 @@ img.cover {
 }
 
 .block>* {
-    max-width: min(480px + 15vw, 60vw);
+    max-width: min(500px + 10vw, 60vw);
 }
 
 .intro {
@@ -97,7 +97,7 @@ img.cover {
 
 p {
     margin: max(10px, 1vh) 0;
-    font-size: clamp(16px, 2.3vh, 2.3rem);
+    font-size: clamp(16px, 2.3vh, 2rem);
     font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ p {
 
 h2 {
     font: inherit;
-    font-size: clamp(18px, 2.3vh, 2.3rem);
+    font-size: clamp(18px, 2.3vh, 2rem);
     font-weight: bold;
     padding: max(20px, 2.5vh) 0;
 }
