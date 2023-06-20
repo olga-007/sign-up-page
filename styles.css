@@ -97,7 +97,7 @@ img.cover {
 
 p {
     margin: max(10px, 1vh) 0;
-    font-size: clamp(16px, 2.3vh, 1.8rem);
+    font-size: clamp(16px, 2.3vh, 1.6rem);
     font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ p {
 
 h2 {
     font: inherit;
-    font-size: clamp(18px, 2.3vh, 1.8rem);
+    font-size: clamp(18px, 2.3vh, 1.6rem);
     font-weight: bold;
     padding: max(20px, 2.5vh) 0;
 }
