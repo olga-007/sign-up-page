@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Awesome Sign-up Page</title>
 </head>
@@ -26,7 +27,7 @@
                 your deepest dreams. Sign up <i>now</i> to get started.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
-        <form action="" method="post">
+        <form id="signup-form" action="" method="post">
             <div class="form-box block">
                 <h2>Let's do this!</h2>
                 <div class="fields">
@@ -60,6 +61,7 @@
                         <input type="password" id="confirm_password" minlength="8" placeholder="&nbsp;" required />
                     </div>
                 </div>
+                <div id="error_msg"></div>
             </div>
             <div class="button-box block">
                 <button type=submit>Create Account</button>
